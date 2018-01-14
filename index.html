@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <source = index.html>
+  <title>Document</title>
+</head>
+<body>
+    <script>
+  window.onload = function(){
+    
+    let ninja ={
+      name:'Adam',
+      chop(x){
+        let _this = this
+        window.setInterval( () => {
+          if(x>0) {
+            console.log(`${_this.name} chopped the enemy`)
+            x--
+          }
+        }, 1000)
+    }
+  };
+  ninja.chop(5)
+  }
+    </script>
+  
+</body>
+</html>
